@@ -18,8 +18,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      'onboardAPIKey': 'ee872bc2997aa2efe3d281e204b5c187'
     }
   };
 
