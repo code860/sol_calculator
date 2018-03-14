@@ -1,7 +1,8 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  lat: 40.964,
-  lng: -73.6859,
+  lat: 42.3550,
+  lng: -71.05708,
   zoom: 15
 });
+//Used the lat long of Boston as defaults
