@@ -21,6 +21,8 @@ gem 'puma', '~> 3.7'
 #For handling rails backedn with ember
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'ember-cli-rails'
+gem 'dotenv-rails'
+gem 'faraday' #For the property search
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -35,6 +37,7 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'awesome_print', require: "ap"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

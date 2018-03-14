@@ -44,6 +44,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
+    awesome_print (1.8.0)
     builder (3.2.3)
     byebug (10.0.0)
     case_transform (0.2)
@@ -54,6 +55,10 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     diff-lcs (1.3)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     ember-cli-rails (0.10.0)
       cocaine (~> 0.5.8)
       ember-cli-rails-assets (~> 0.6.2)
@@ -61,6 +66,8 @@ GEM
       railties (>= 3.2)
     ember-cli-rails-assets (0.6.2)
     erubi (1.7.1)
+    faraday (0.14.0)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -81,6 +88,7 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    multipart-post (2.0.0)
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -154,8 +162,11 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
+  awesome_print
   byebug
+  dotenv-rails
   ember-cli-rails
+  faraday
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
